@@ -17,7 +17,7 @@ $('form').submit(function(){
 
 socket.on('chat message', function(msg){
   $('#messages').append($('<li class="chat-bubble">').text(msg));
-	$('#messages').scrollTop($('#messages').height());
+	$('.message-div').scrollTop($('.message-div').height());
 });
 
 
