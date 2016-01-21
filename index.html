@@ -12,7 +12,7 @@
       #messages { list-style-type: none; margin: 0; padding: 0; }
       #messages li { padding: 5px 10px; }
       #messages li:nth-child(odd) { background: #eee; }
-      .message-div{ margin-bottom: 70px; width: 70%; height: 100%; overflow: auto;  float: left !important;}
+      .message-div{ margin-bottom: 70px; width: 70%; height: 100%; max-height: 700px; overflow: auto;  float: left !important;}
       .bottom-form{position: fixed; bottom: 0; width: 100%;  background: #000; padding: 3px;}
         .chat-bubble, .server-message{
             background-color: #e0edff;
@@ -45,10 +45,11 @@
     <h2>SocketIO chat</h2>
   </div>
   <div id="chat">
+    <h4>Messages</h4>
+
     <div class="message-div">
       <div class="row">
       <div class="col-xs-12">
-        <h4>Messages</h4>
         <ul id="messages"></ul>    
         
       </div>
